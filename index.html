@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kedar Dere - Portfolio</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Protfolio<span>.</span></div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle" class="icon-btn">🌙</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero section-padding">
+            <div class="container hero-container fade-in">
+                
+                <div class="hero-text">
+                    <p class="hero-greeting">👋 Hello, World! I am</p>
+                    <h1>Kedar Dere<span>.</span></h1>
+                    <h2 class="hero-role">BSc IT & Full-Stack Developer</h2>
+                    <p class="hero-desc">
+                        I specialize in building interactive, modern, and responsive web applications. 
+                        I am passionate about writing clean code and turning complex problems into elegant user experiences.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-outline">Contact Me</a>
+                    </div>
+                </div>
+
+                <div class="hero-image">
+                    <div class="profile-pic-placeholder">
+                        <span style="font-size: 5rem;">👨‍💻</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="about" class="about section-padding bg-alt">
+            <div class="container fade-in">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <h3>My Journey</h3>
+                        <p>Hello! I am <strong>Kedar Dere</strong>, an enthusiastic web developer with a degree in <strong>BSc Information Technology</strong>.</p>
+                        <p>I have a strong foundation in both frontend and backend technologies. I am constantly learning new frameworks and striving to improve my skills to build seamless digital solutions.</p>
+                        
+                        <ul class="personal-details">
+                            <li><strong>Name:</strong> Kedar Dere</li>
+                            <li><strong>Education:</strong> BSc IT</li>
+                            <li><strong>Role:</strong> Full-Stack Developer</li>
+                            <li><strong>Location:</strong> Maharashtra, India</li>
+                        </ul>
+                    </div>
+                    <div class="skills">
+                        <h3>Core Skills</h3>
+                        <div class="skill-tags">
+                            <span>JavaScript</span> <span>Node.js</span> <span>Express.js</span> 
+                            <span>MongoDB</span> <span>HTML5</span> <span>CSS3</span> <span>React</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects section-padding">
+            <div class="container fade-in">
+                <h2 class="section-title">Featured Projects</h2>
+                
+                <div class="filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="React">React</button>
+                    <button class="filter-btn" data-filter="Node.js">Node.js</button>
+                    <button class="filter-btn" data-filter="JavaScript">JavaScript</button>
+                </div>
+
+                <div id="projects-container" class="grid">
+                    <div class="loading-spinner">Loading projects...</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact" class="contact section-padding bg-alt">
+        <div class="container fade-in">
+            <h2 class="section-title">Let's Connect</h2>
+            <p>Have a question or want to work together?</p>
+            
+            <form id="contact-form" class="contact-form">
+                <div class="form-group">
+                    <input type="text" id="name" placeholder="Your Name" required>
+                    <input type="email" id="email" placeholder="Your Email" required>
+                </div>
+                <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
+                <button type="submit" class="btn btn-primary lg-btn w-full">Send Message</button>
+                <p id="form-status" class="form-status"></p>
+            </form>
+
+            <div class="social-links" style="margin-top: 3rem;">
+                <p>&copy; 2026 Kedar Dere. Built with Node.js & Vanilla JS.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
